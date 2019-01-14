@@ -1,3 +1,2 @@
 file_client: local
 file_root: /path/to/repo
-log_level: debug
