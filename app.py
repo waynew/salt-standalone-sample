@@ -3,7 +3,7 @@ import responder
 api = responder.API()
 
 @api.route("/")
-async def main(req, resp, *, greets):
+async def main(req, resp):
     resp.text = "Hey, it works! Maybe try /api/hello too?"
 
 @api.route("/api/{greets}")
