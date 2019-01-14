@@ -4,9 +4,9 @@ api = responder.API()
 
 @api.route("/")
 async def main(req, resp, *, greets):
-    resp.text = "Hey, it works! Maybe try /hello too?"
+    resp.text = "Hey, it works! Maybe try /api/hello too?"
 
-@api.route("/{greets}")
+@api.route("/api/{greets}")
 async def greet_world(req, resp, *, greets):
     resp.text = f"{greets}, world! Salt is the coolest!"
 
