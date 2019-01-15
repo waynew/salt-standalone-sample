@@ -7,8 +7,8 @@ From salt/#6575:
 > - git checkout
 > - cd into repository's deploy directory, run salt against top.sls
 
-This is an example of how to do that. For simplicity's sake, you can just use
-the Dockerfile like so:
+This is an example of how to do that. For simplicity's sake, to get a feel for
+what it's doing, you can just download the Dockerfile and use it like so:
 
     docker build -t salt-standalone .
     docker run -it -p 5042:5042 --rm --name salty_app salt-standalone
